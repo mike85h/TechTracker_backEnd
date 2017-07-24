@@ -1,0 +1,26 @@
+{
+  "name": "week9proj_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike85h/week9Proj_backEnd.git"
+  },
+  "author": "Mike H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike85h/week9Proj_backEnd/issues"
+  },
+  "homepage": "https://github.com/mike85h/week9Proj_backEnd#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.15.3",
+    "knex": "^0.13.0",
+    "node": "0.0.0",
+    "parser": "^0.1.4"
+  }
+}
