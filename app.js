@@ -1,14 +1,13 @@
-const express = require('express');
-const knex = require('knex');
-const app = express();
-const port = process.env.PORT || 8080;
-const cors = require('cors');
+const express = require('express')
+const knex = require('./db/knex.js')
+const app = express()
+const port = process.env.PORT || 8080
+const cors = require('cors')
+
 
 app.get('/', function(req, res){
-  res.send("hello world");
-
-  knex('technology').then(function(data){
-    console.log(data);
+  knex('technology').select('*').then(function(technologies){
+    res.send(technologies);
   })
 })
 
