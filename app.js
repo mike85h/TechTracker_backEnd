@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.get('/', function(req, res){
   knex('technology').select('*').then(function(technologies){
+    console.log(json(technologies));
     res.json(technologies);
   })
 })
