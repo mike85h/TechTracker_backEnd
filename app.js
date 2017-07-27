@@ -7,7 +7,7 @@ const cors = require('cors');
 app.get('/', function(req, res){
   res.send("hello world");
 
-  knex('technology').knex.raw('SELECT * FROM technology;').then(function(data){
+  knex('technology').then(function(data){
     console.log(data);
   })
 })
