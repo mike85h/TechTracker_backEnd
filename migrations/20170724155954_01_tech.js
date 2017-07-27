@@ -4,10 +4,9 @@ exports.up = function(knex, Promise) {
       table.increments();
       table.text('name').notNullable();
       table.text('type');
-      table.specificType('dependencies', 'text[]');
-      table.specificType('notes', 'text[]');
+      table.text('note');
       table.specificType('examples', 'text[]');
-      table.date('dateFirstUsed');
+      table.date('date');
     });
 };
 
