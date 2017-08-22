@@ -14,7 +14,7 @@ exports.seed = function(knex, Promise) {
       {
         id: 2,
         name: 'Knex.js',
-        type: 'lirary',
+        type: 'library',
         note: 'note1',
         examples: ['example1', 'example2'],
         date: '2017-7-15'
