@@ -1,7 +1,7 @@
 const express = require('express')
 const knex = require('./db/knex.js')
 const app = express()
-const port = 8080
+const port = process.env.NODE_ENV || 8080
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
